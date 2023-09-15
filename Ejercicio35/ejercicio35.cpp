@@ -1,42 +1,40 @@
 #include <iostream>
 #include <vector>
 
+#include <C:\Users\javier.morales\Desktop\javier\unahur\algoritmos\ejercicios\EjerciciosEnCPPuno\carga_matrices.cpp>
+
 
 using namespace std;
 
-const int maximo = 10;
-typedef int matriz[maximo][maximo];
+// const int maximo = 10;
+// typedef int matriz[maximo][maximo];
 
+// int  ingresar_tamano() {
+//     int cant = 2;
+//     do
+//     {
+//         cout<<"Ingrese un tamaño de los lados de la matriz, máximo 10: ";
+//         cin >> cant;
+//     } while (cant > maximo);
+//     cout << endl;
+//     return cant;
+// }
 
-//int cantidad = 0;
-
-
-int  ingresar_tamano() {
-    int cant = 2;
-    do
-    {
-        cout<<"Ingrese un tamaño de los lados de la matriz, máximo 10: ";
-        cin >> cant;
-    } while (cant > maximo);
-    cout << endl;
-    return cant;
-}
-
-void ingresar_datos(matriz &matriz, int cant, char tipo) {
-    cout << endl;
-    cout << "-----------------------------------------" << endl;
-    cout << "Ingresando valores a la matriz " << tipo << endl; 
-    cout << "-----------------------------------------" << endl;
-    for(int i = 0; i < cant; i++) {
-        cout << i + 1 << "° fila " << endl; 
-        cout << "-----------------------------------------" << endl;
-        for(int j=0; j< cant; j++) {
-            cout << "Ingrese valor para el " << j + 1 << "° lugar: "; cin >> matriz[i][j];
-        }
-        cout << endl;
-    }
+// void ingresar_datos(matriz &matriz, int cant, char tipo) {
+//     cout << endl;
+//     cout << "-----------------------------------------" << endl;
+//     cout << "Ingresando valores a la matriz " << tipo << endl; 
+//     cout << "-----------------------------------------" << endl;
+//     for(int i = 0; i < cant; i++) {
+//         cout << i + 1 << "° fila " << endl; 
+//         cout << "-----------------------------------------" << endl;
+//         for(int j=0; j< cant; j++) {
+//             cout << "Ingrese valor para el " << j + 1 << "° lugar: "; cin >> matriz[i][j];
+//         }
+//         cout << endl;
+//     }
     
-}
+// }
 
 void sumar_matrices(matriz &suma, int cant, matriz a, matriz b){
     for(int i = 0; i < cant; i++) {
@@ -70,8 +68,10 @@ int main(){
     matriz matriz_suma;
     matriz_A[cantidad][cantidad];
     matriz_B[cantidad][cantidad];
-    ingresar_datos(matriz_A, cantidad, 'A');
-    ingresar_datos(matriz_B, cantidad, 'B');
+    cout << "Primer matriz" << endl;
+    ingresar_datos(matriz_A, cantidad);
+    cout << "Segunda matriz" << endl;
+    ingresar_datos(matriz_B, cantidad);
     sumar_matrices(matriz_suma, cantidad,matriz_A,matriz_B);
     mostrar_suma(matriz_suma, cantidad);
     return 0;
