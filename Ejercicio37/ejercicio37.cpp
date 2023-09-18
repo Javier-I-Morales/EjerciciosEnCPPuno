@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 
-#include <C:\Users\javier.morales\Desktop\javier\unahur\algoritmos\ejercicios\EjerciciosEnCPPuno\carga_matrices.cpp>
+//#include <C:\Users\javier.morales\Desktop\javier\unahur\algoritmos\ejercicios\EjerciciosEnCPPuno\carga_matrices.cpp>
+#include <F:\UNAHUR - ALGORITMOS\EjerciciosEnCPPuno\carga_matrices.cpp>
 
 using namespace std;
 

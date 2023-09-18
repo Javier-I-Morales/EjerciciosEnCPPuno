@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 
-#include <C:\Users\javier.morales\Desktop\javier\unahur\algoritmos\ejercicios\EjerciciosEnCPPuno\carga_matrices.cpp>
+//#include <C:\Users\javier.morales\Desktop\javier\unahur\algoritmos\ejercicios\EjerciciosEnCPPuno\carga_matrices.cpp>
+#include <F:\UNAHUR - ALGORITMOS\EjerciciosEnCPPuno\carga_matrices.cpp>
 
 using namespace std;
 
@@ -27,12 +28,12 @@ bool es_matriz_identidad(int cant, matriz matriz){
 int main(){
     int cantidad = ingresar_tamano();
 
-    matriz matriz_A;
+    matriz matriz;
     vector <int> vector_suma;
-    matriz_A[cantidad][cantidad];
-    ingresar_datos(matriz_A, cantidad);
+    matriz[cantidad][cantidad];
+    ingresar_datos(matriz, cantidad);
 
-    if(es_matriz_identidad(cantidad, matriz_A)){
+    if(es_matriz_identidad(cantidad, matriz)){
         cout <<"Es matriz identidad." << endl;
     }else{
         cout <<"No es matriz identidad." << endl;
